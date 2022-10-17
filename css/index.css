@@ -1,0 +1,68 @@
+#main{
+    width: 100%;
+    height:100%;
+
+}
+#bgi{
+    position: relative;
+}
+#bgi img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+}
+#bgi img:nth-child(2){
+    z-index: 1;
+    animation: Bgi 2s 5s forwards;
+}
+#text{
+    position: absolute;
+    z-index: 2;
+    left:0px;
+    top:0px;
+    margin:150px 150px;
+    width: 650px;
+    height: 600px;
+    font-size: 20px;
+    color:black;
+    line-height: 50px;
+    animation: text 10s forwards;
+}
+#huixie{
+    position: absolute;
+    right:380px;
+    top:162px;
+    background-color: #fff;
+    opacity: 0;
+    width:50px;
+    height:110px;
+    z-index: 3;
+}
+#huixie:hover{
+    opacity: 0.1;
+    box-shadow: 0 0 20px 20px yellow; 
+    cursor: pointer;
+}
+@keyframes text {
+    0%{
+        color:darkkhaki; 
+        opacity: 1;        
+    }
+    50%{
+        font-size: 22px;
+        text-shadow: 0 0 10px dimgray;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes Bgi {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
