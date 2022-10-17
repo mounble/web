@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第三组PC端网页布局</title>
+    <link rel = "stylesheet" href = "../css/base.css" type = "text/css">
+    <link rel = "stylesheet" href = "../css/index.css" type = "text/css"> 
+</head>
+<body>
+    <div id = "main">
+        <div id = "bgi">
+            <img src = '../img/index_2.jpg'>
+            <img src = '../img/index_1.jpg'>
+        </div>
+        <!-- 放在下面反而会显示在最上面——css的层叠特性 -->
+        <div id = "text">
+            <p>2800多年前,染布技艺就已经在丰饶的中华大地上逐渐兴盛,<br>
+            随着一代代人的传承发展以及审美要求的提高,<br>
+            在这样一座小小的染坊中,<br>
+            一匹匹颜色各异，花纹精美的染布凝结了无数工匠的巧思与手艺</p>
+        </div>
+        <div id = "huixie" onclick="Click()"></div>
+    </div>
+    
+</body>
+ <script type="text/javascript">
+        function Click(){
+            window.location.href = '#';
+        }
+    </script>
+</html>
